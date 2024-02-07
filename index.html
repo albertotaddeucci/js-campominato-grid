@@ -14,25 +14,33 @@
 </head>
 <body>
 
-    <nav class="navbar bg-body-tertiary">
-        <div class="container">
-          <h1>Campo minato</h1>
+    <nav class="navbar my_background shadow">
+        <div class="container ">
+          <h1 class="m-auto fw-bold ">Campo Minato</h1>
         </div>
     </nav>
-    <button id="button-play">Gioca</button>
+    
+    <div class="container" id="container">
+        <div class="row align-items-center my-4 justify-content-around">
+            <div class="col-6">
+                
+                <select class="form-select" id="select" >
+                    <option selected>Seleziona la difficoiltà</option>
+                    <option value="1" id="option1">Difficoltà 1</option>
+                    <option value="2" id="option2">Difficoltà 2</option>
+                    <option value="3" id="option3">Difficoltà 3</option>
+                </select>
 
-    <select class="form-select w-25" id="select" >
-        <option selected>Open this select menu</option>
-        <option value="1" id="option1">Difficoltà 1</option>
-        <option value="2" id="option2">Difficoltà 2</option>
-        <option value="3" id="option3">Difficoltà 3</option>
-    </select>
+            </div>
+            <div class="col-2">
+                <button id="button-play" type="button" class="btn btn-primary btn-lg border-0 my_btn_color">Gioca</button>
+                
 
-    <div class="container my_container" id="container">
-
+            </div>
+        </div>
+        
         <div id="grid" class="d-flex flex-wrap ">
-
-
+            
         </div>
 
        

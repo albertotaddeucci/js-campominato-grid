@@ -7,39 +7,28 @@
 
 body {
     font-family: sans-serif;
+    background-color: #F9EFDB;
 
 }
 
 
 .square{     
-    width: calc(100% / 10);
     aspect-ratio: 1;
-
-}
-
-.square2 {     
-    width: calc(100% / 9);
-    aspect-ratio: 1;
-
-
-}
-
-.square3 {     
-    width: calc(100% / 7);
-    aspect-ratio: 1;
-
+    background-color: #9DBC98;
 }
 
 .square.active {
-    background-color: lightblue;
-    
+    background-color: #638889;    
 }
 
-.col{
-    background-color: red;
-    border: 1px solid black;
+.my_background{
+    background-color: #9DBC98 ;
 }
 
-.my_container{
-    max-width: calc(1000px);
+.my_btn_color{
+    background-color:  #D24545 ;
+}
+
+.btn:hover{
+    background-color:  #972525 ;
 }
