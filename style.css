@@ -11,11 +11,22 @@ body {
 }
 
 
-.square {  
-   
-    height: 100px;
-    width: 100px;
+.square{     
+    width: calc(100% / 10);
+    aspect-ratio: 1;
 
+}
+
+.square2 {     
+    width: calc(100% / 9);
+    aspect-ratio: 1;
+
+
+}
+
+.square3 {     
+    width: calc(100% / 7);
+    aspect-ratio: 1;
 
 }
 
@@ -30,5 +41,5 @@ body {
 }
 
 .my_container{
-    max-width: calc(1000px + 24px);
+    max-width: calc(1000px);
 }
