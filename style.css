@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* reset */
+
+body {
+    font-family: sans-serif;
+
+}
+
+
+.square {  
+   
+    height: 100px;
+    width: 100px;
+
+
+}
+
+.square.active {
+    background-color: lightblue;
+    
+}
+
+.col{
+    background-color: red;
+    border: 1px solid black;
+}
+
+.my_container{
+    max-width: calc(1000px + 24px);
+}
