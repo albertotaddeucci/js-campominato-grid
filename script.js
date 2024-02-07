@@ -5,6 +5,8 @@
 let difficoulty;
 
 const containerElement = document.getElementById("container");
+const gridElement = document.getElementById("grid")
+const randomNumbersArray = getRandomNumbersArray();
 
 
 
@@ -13,6 +15,9 @@ const buttonPlay = document.getElementById("button-play");
 
 buttonPlay.addEventListener("click",function(){
     let selectDiff = document.getElementById("select").value;
+    gridElement.innerText = ""
+
+    
     
     if (selectDiff == 1){
         let difficoulty = 100
@@ -38,9 +43,6 @@ buttonPlay.addEventListener("click",function(){
 
 function createGrid(difficoulty){
     
-    const gridElement = document.getElementById("grid")
-    // const containerElement = document.getElementById("container")
-    const randomNumbersArray = getRandomNumbersArray();
     
     for(let i = 0; i < difficoulty; i++){
         const newElement = document.createElement("div");
