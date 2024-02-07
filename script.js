@@ -2,11 +2,12 @@
 
 
 //variabile difficolta
-let difficoulty;
+let difficoulty = 100;
 
-const containerElement = document.getElementById("container");
 const gridElement = document.getElementById("grid")
 const randomNumbersArray = getRandomNumbersArray();
+
+
 
 
 
@@ -16,31 +17,31 @@ const buttonPlay = document.getElementById("button-play");
 buttonPlay.addEventListener("click",function(){
     let selectDiff = document.getElementById("select").value;
     gridElement.innerText = ""
-
+    
     
     
     if (selectDiff == 1){
-        let difficoulty = 100
-
+        difficoulty = 100      
         createGrid(difficoulty);
-
-
+        
     } else if (selectDiff == 2){
         difficoulty = 81
         createGrid(difficoulty);
-
-
+        
+        
     } else if (selectDiff == 3){
         difficoulty = 49
         createGrid(difficoulty);
-
-    }
-       
         
+    }      
+    
     
 })
 
 
+
+
+//funzione crea griglia
 function createGrid(difficoulty){
     
     
@@ -57,7 +58,7 @@ function createGrid(difficoulty){
             console.log(randomNumbersArray[i]);    
             
         });
-
+        
         if (difficoulty<50){
             newElement.classList.add("square3")
         } else if(difficoulty<90){
@@ -68,10 +69,6 @@ function createGrid(difficoulty){
     }
     
 }
-
-
-
-
 
 
 
