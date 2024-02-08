@@ -11,6 +11,10 @@ body {
 
 }
 
+.my_container{
+    max-width: 900px;
+}
+
 
 .square{     
     aspect-ratio: 1;
